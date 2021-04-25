@@ -23,6 +23,7 @@
 		CB04630E263481B900A113FE /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB046307263481B900A113FE /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB04630F263481BA00A113FE /* FBSDKGamingServicesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB046308263481B900A113FE /* FBSDKGamingServicesKit.framework */; };
 		CB046310263481BA00A113FE /* FBSDKGamingServicesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB046308263481B900A113FE /* FBSDKGamingServicesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB5BE60326356F0A003215D7 /* FBShareDialogAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BE60226356F0A003215D7 /* FBShareDialogAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,7 @@
 		CB046306263481B900A113FE /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../Vender/Facebook/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		CB046307263481B900A113FE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../Vender/Facebook/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CB046308263481B900A113FE /* FBSDKGamingServicesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKGamingServicesKit.framework; path = ../Vender/Facebook/FBSDKGamingServicesKit.framework; sourceTree = "<group>"; };
+		CB5BE60226356F0A003215D7 /* FBShareDialogAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBShareDialogAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				CB0462C02634806200A113FE /* Assets.xcassets */,
 				CB0462C22634806200A113FE /* LaunchScreen.storyboard */,
 				CB0462C52634806200A113FE /* Info.plist */,
+				CB5BE60226356F0A003215D7 /* FBShareDialogAdapter.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB0462BC2634805F00A113FE /* ViewController.swift in Sources */,
+				CB5BE60326356F0A003215D7 /* FBShareDialogAdapter.swift in Sources */,
 				CB0462B82634805F00A113FE /* AppDelegate.swift in Sources */,
 				CB0462BA2634805F00A113FE /* SceneDelegate.swift in Sources */,
 			);
