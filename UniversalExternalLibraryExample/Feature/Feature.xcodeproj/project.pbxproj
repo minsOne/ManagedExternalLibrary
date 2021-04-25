@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB5BE58326356778003215D7 /* Feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CB5BE58126356778003215D7 /* Feature.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB5BE5EA26356A17003215D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BE5E926356A17003215D7 /* ViewController.swift */; };
+		CB5BE5FE26356EB1003215D7 /* ExternalLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5BE5FD26356EB1003215D7 /* ExternalLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		CB5BE58126356778003215D7 /* Feature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feature.h; sourceTree = "<group>"; };
 		CB5BE58226356778003215D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5BE5E926356A17003215D7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../DynamicExternalLibraryExample/Feature/Feature/ViewController.swift; sourceTree = "<group>"; };
+		CB5BE5FD26356EB1003215D7 /* ExternalLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExternalLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5BE5FE26356EB1003215D7 /* ExternalLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +37,7 @@
 			children = (
 				CB5BE58026356778003215D7 /* Feature */,
 				CB5BE57F26356778003215D7 /* Products */,
+				CB5BE5FC26356EB1003215D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +57,14 @@
 				CB5BE58226356778003215D7 /* Info.plist */,
 			);
 			path = Feature;
+			sourceTree = "<group>";
+		};
+		CB5BE5FC26356EB1003215D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB5BE5FD26356EB1003215D7 /* ExternalLibrary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
