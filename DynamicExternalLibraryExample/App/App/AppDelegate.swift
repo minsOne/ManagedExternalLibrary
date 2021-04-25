@@ -8,7 +8,6 @@
 import UIKit
 import FBSDKShareKit
 import ExternalLibrary
-//import FBSDKCoreKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
