@@ -9,7 +9,7 @@ import Foundation
 import FBSDKShareKit
 import ExternalLibrary
 
-final class FBShareDialogImpl: NSObject, FBShareDialogInterface, SharingDelegate {
+final class FBShareDialogAdapter: NSObject, FBShareDialogInterface, SharingDelegate {
     var dialog: ShareDialog?
     weak var delegate: FBSharingDelegate?
     

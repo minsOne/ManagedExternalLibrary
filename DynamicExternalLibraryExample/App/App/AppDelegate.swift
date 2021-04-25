@@ -14,10 +14,8 @@ import ExternalLibrary
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        Settings.appID = "3837547866363547"
-//        Settings.displayName = "externalLibraryApp"
 
-        ExternalLibraryAdapter.fbShareDialog = FBShareDialogImpl.self
+        ExternalLibraryAdapter.fbShareDialog = FBShareDialogAdapter.self
         
         return true
     }
