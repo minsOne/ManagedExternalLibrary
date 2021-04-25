@@ -14,8 +14,14 @@ public struct FBShareLinkContent {
 }
 
 public struct FBSharePhotoContent {
-    public var image: UIImage
+    public var image: UIImage?
     public var isUserGenerated: Bool
+    
+    public init(image: UIImage? = nil,
+                isUserGenerated: Bool) {
+        self.image = image
+        self.isUserGenerated = isUserGenerated
+    }
 }
 
 public protocol FBSharingDelegate: class {

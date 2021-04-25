@@ -16,14 +16,29 @@ final class FBShareDialogAdapter: NSObject, FBShareDialogInterface, SharingDeleg
     required init(fromViewController: UIViewController, link: FBShareLinkContent, delegate: FBSharingDelegate) {
         super.init()
 
+        self.delegate = delegate
+
         let shareContent = ShareLinkContent()
         link.contentURL.map { shareContent.contentURL = $0 }
-        self.delegate = delegate
-        self.dialog = ShareDialog(fromViewController: fromViewController, content: shareContent, delegate: self)
+        self.dialog = ShareDialog(fromViewController: fromViewController,
+                                  content: shareContent,
+                                  delegate: self)
     }
     
     init(fromViewController: UIViewController, photo: FBSharePhotoContent, delegate: FBSharingDelegate) {
+        super.init()
         
+        self.delegate = delegate
+
+        let sharePhoto = SharePhoto()
+        sharePhoto.image = photo.image
+        sharePhoto.isUserGenerated = photo.isUserGenerated
+        let content = SharePhotoContent()
+        content.photos = [sharePhoto]
+        
+        self.dialog = ShareDialog(fromViewController: fromViewController,
+                                  content: content,
+                                  delegate: self)
     }
     
     func show() -> Bool {
