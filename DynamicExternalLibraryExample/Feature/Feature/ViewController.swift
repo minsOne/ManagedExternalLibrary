@@ -15,6 +15,7 @@ public class ViewController: UIViewController, FBSharingDelegate {
     public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
+        AppLogService.Firebase.logEvent()
     }
     
     public override func viewDidAppear(_ animated: Bool) {
